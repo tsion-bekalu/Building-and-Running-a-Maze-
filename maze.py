@@ -67,8 +67,12 @@ def main():
                 gen_stack.append((nr, nc)); remove_wall(r, c, nr, nc)
                 visited_gen[nr][nc] = True
             elif len(gen_stack) > 1: gen_stack.pop()
-            else: gen_done = True
+            else:
+                s_r, e_r = random.randint(0, R-1), random.randint(0, R-1)
+                eastWall[s_r][0] = 0   # Entry
+                eastWall[e_r][C] = 0   # Exit
+                gen_done = True
 
         pygame.display.flip()
-        
+
 if __name__ == "__main__": main()
