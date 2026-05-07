@@ -132,7 +132,7 @@ def main():
         for sr, sc in solver_stack: draw_dot(sr, sc, (1, 0, 0))
 
         pygame.display.flip()
-        pygame.time.wait(80)
+        pygame.time.wait(60)
 
     pygame.quit()
 
