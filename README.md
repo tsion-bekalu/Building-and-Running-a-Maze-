@@ -68,6 +68,8 @@ python maze.py
 
 ---
 
-## Notes
+## Video Loom
+
+https://www.loom.com/share/86fa208e39944aaa980fd400a624de8a
 
 Each time you run the program, the maze will look different because it is generated randomly. The approach used guarantees that all cells are connected, so the maze is always solvable.
